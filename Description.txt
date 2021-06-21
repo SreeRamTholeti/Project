@@ -1,0 +1,11 @@
+In Eclips
+1) crated a project Day1_Task
+2)Created a package Pak1
+3)under that pak1 I created 3 classes and 1 interfase
+4)Classes :
+	a)Bubblesort which impliments the Task1 Interfase.
+	b)Selectionsort also impliments the Task1 Interfase.
+	c)Main class objects are created for both bubble and selection sort
+	   which invokes them.
+5)Interfase:
+	a)Task1 consist's of two methods sort and diplay.
