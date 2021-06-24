@@ -13,10 +13,7 @@ public class Modifyingxlxsfile {
 		
 		Handlingxlsx hxl = new Handlingxlsx();
 		List<Date> date = hxl.Reading(sheet,row_count);
-		
-		sheet.getRow(0).createCell(2).setCellValue("MM/dd/yyyy Formate");
-		sheet.getRow(0).createCell(3).setCellValue("yyyy/MM/dd Formate");
-		
+			
 		Formatingdate ob = new Formatingdate();
 		String[] date1 = ob.Formate_1(date,row_count);
 		String[] date2 = ob.Formate_2(date,row_count);
