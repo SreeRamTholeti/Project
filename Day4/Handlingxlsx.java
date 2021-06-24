@@ -24,6 +24,8 @@ public class Handlingxlsx {
 	
 	void Writing(XSSFSheet sheet,FileOutputStream fos,XSSFWorkbook workbook,String s1[],String s2[],int length) throws Exception
 	{
+		sheet.getRow(0).createCell(2).setCellValue("MM/dd/yyyy Formate");
+		sheet.getRow(0).createCell(3).setCellValue("yyyy/MM/dd Formate");
 		for(i=1;i<length;i++)
 		{
 			sheet.getRow(i).createCell(2).setCellValue(s1[i]);
