@@ -30,8 +30,8 @@ public class Opencsv {
 		headerfont.setBold(true);
 		headerfont.setColor(IndexedColors.DARK_BLUE.getIndex());
 		CellStyle headstyle =	workbook.createCellStyle();
-	    headstyle.setFont(headerfont);
-	    Row head = sheet.createRow(0);
+	    	headstyle.setFont(headerfont);
+	    	Row head = sheet.createRow(0);
 	    
 		while((row = br.readLine()) != null)
 		{
