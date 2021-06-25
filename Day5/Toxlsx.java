@@ -24,7 +24,7 @@ public class Toxlsx {
 		int col = array.length;
 		for(j=0;j<col;j++)
 		{
-				s.getRow(rownum).createCell(j).setCellValue(array[j]);			
+			s.getRow(rownum).createCell(j).setCellValue(array[j]);			
 		}
 	}	
 }
