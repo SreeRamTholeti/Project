@@ -1,0 +1,2 @@
+1. Create a program to navigate to github.com and fetch details about all the repositories created by you.
+2. Save the repo names into an excel file
