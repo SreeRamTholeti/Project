@@ -20,8 +20,8 @@ public class Launchchrome {
 		driver.get("https://github.com/login");
 		WebElement name = driver.findElement(By.name("login"));
 		WebElement password = driver.findElement(By.name("password"));
-		name.sendKeys("SreeRamTholeti");
-		password.sendKeys("sreeram@1");
+		name.sendKeys("**************");
+		password.sendKeys("*********");
 		WebElement searchIcon = driver.findElement(By.name("commit"));
 		searchIcon.click();
 		
