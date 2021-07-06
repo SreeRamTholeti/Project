@@ -11,8 +11,7 @@ public class Example_3 {
 		Opensite os = new Opensite();
 		WebDriver driver = os.Open();
 		WebDriverWait wait = new WebDriverWait(driver, 30);
-		
-		WebElement Checkbox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[2]/div[2]/div/a[2]")));
+		WebElement Checkbox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"basic\"]/div/a[2]")));
 		Checkbox.click();
 		WebElement box = driver.findElement(By.id("isAgeSelected"));
 		box.click();
