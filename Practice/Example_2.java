@@ -11,14 +11,13 @@ public class Example_2 {
 		Opensite os = new Opensite();
 		WebDriver driver = os.Open();
 		WebDriverWait wait = new WebDriverWait(driver, 30);
-		
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/div[2]/div/div/div[2]/div[2]/div/a[1]")));
-		element.click();
-		WebElement avalue = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div[2]/div[2]/form/div[1]/input"));
-		avalue.sendKeys(String.valueOf(103));
-		WebElement bvalue = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div[2]/div[2]/form/div[2]/input"));
-		bvalue.sendKeys(String.valueOf(77));
-		WebElement Total = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div[2]/div[2]/form/button"));
+		WebElement Form_demo =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id=\"basic\"]//a[@class=\"list-group-item\"][1]")));
+		Form_demo.click();
+		WebElement avalue = driver.findElement(By.xpath("//input[@id=\"sum1\"]"));
+		avalue.sendKeys("103");
+		WebElement bvalue = driver.findElement(By.xpath("//input[@id=\"sum2\"]"));
+		bvalue.sendKeys("77");
+		WebElement Total = driver.findElement(By.xpath("//form[@id=\"gettotal\"]//button[@class=\"btn btn-default\"]"));
 		Total.click();
 	}
 }
