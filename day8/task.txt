@@ -1,0 +1,16 @@
+Task for the day : 
+Create a excel file(manually) 
+Add 2 columns 
+1. Slno.
+2. Names
+Make sure you have atleast 100 rows
+Save the workbook
+
+Automation-
+Go to random.org
+Generate a unique set of integers from 1-100(if you have 100rows).
+Get the random numbers generated.
+
+
+In the same workbook create a new tab...
+Get randomly generated numbers and fetch the corresponding row, copy the row and paste it in new sheet.
