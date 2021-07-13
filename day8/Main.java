@@ -8,7 +8,6 @@ public class Main {
 		int rownum = getxl.get_rowcount();
 		String set[] = rs.open_site(rownum);
 		
-		getxl.Create_newSheet();
-		getxl.save_to_sheet(set, set.length);
+		getxl.savingtoxlsx(set, set.length);
 	}
 }
