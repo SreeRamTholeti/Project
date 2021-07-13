@@ -16,6 +16,7 @@ public class Getfromxlsx{
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		Integer row_count = sheet.getLastRowNum();
 		workbook.close();
+		fis.close();
 		return(row_count);
 	}
 	public void savingtoxlsx(String set[],int size) throws Exception {
